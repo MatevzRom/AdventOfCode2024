@@ -30,4 +30,3 @@ for line in f:
                 goodRow+=1
                 break
 print(goodRow)
-        
