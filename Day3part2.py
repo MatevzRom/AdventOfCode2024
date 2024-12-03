@@ -1,6 +1,5 @@
 def zmnozi(text, naredi):
     i = 0
-    cont = False
     zmnozek = 0
     while i < len(text):
         if text[i:i+4] == "do()":
@@ -25,11 +24,8 @@ def zmnozi(text, naredi):
                         zmnozek += int(number1)*int(number2)
                         break
                     else:
-                        cont = True
                         break
                     j+=1
-                if cont:
-                    continue
         i += 1
     return zmnozek, naredi
 
