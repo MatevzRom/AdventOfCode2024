@@ -1,6 +1,5 @@
 def zmnozi(text):
     i = 0
-    cont = False
     zmnozek = 0
     while i < len(text):
         # print(i)
@@ -22,14 +21,11 @@ def zmnozi(text):
                         number2 += text[i+j]
                     elif text[i+j]==')' and number1 != "" and number2 != "":
                         zmnozek += int(number1)*int(number2)
-                        i=i+j-1
                         break
                     else:
-                        cont = True
                         break
                     j+=1
-                if cont:
-                    continue
+                
         i += 1
     # print(zmnozek)
     return zmnozek
